@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de Contacto</title>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2em;
+        }
+        h1 {
+            padding: 2em 0;
+        }
+        h2 {
+            color: #8a8a8a;
+            font-size: 1.2em;
+        }
+        .mt4em {
+            margin-top: 4em;
+        }
+        button#submit {
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+<div class="text-center">
+    <h1>Formulario de Contacto</h1>
+    <h2>
+        Si tienen sugerencias y peticiones, rellenen el formulario de abajo.
+    </h2>
+</div>
+<form class="mt4em">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" id="apellido" class="form-control" aria-describedby="coverHelpBlock">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-1">
+            <label for="phone_prefix" class="form-label">Prefijo</label>
+            <input type="text" id="phone_prefix" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="phone_number" class="form-label">Número de Teléfono</label>
+            <input type="text" id="phone_number" class="form-control" aria-describedby="coverHelpBlock">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <label for="comment" class="form-label">Comentarios</label>
+            <textarea rows="5" id="comment" class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <button class="btn btn-success" type="submit">Enviar</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

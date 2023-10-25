@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2em;
+        }
+        h1 {
+            padding: 2em 0;
+        }
+        h2 {
+            color: #8a8a8a;
+            font-size: 1.2em;
+        }
+        .mt4em {
+            margin-top: 4em;
+        }
+        button#submit {
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+<div class="text-center">
+    <h1>Register</h1>
+    <h2>
+        Una cuenta premium te permitirá subir mp3 directamente a tu canal de YouTube.<br/>
+        Convertiremos el mp3 en vídeo y lo subiremos por ti.<br/>
+        También tendrás acceso a la auto-publicación de audio desde feeds RSS.
+    </h2>
+</div>
+<form class="mt4em" method="get" action="003_pagina2.html">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" id="apellido" class="form-control" aria-describedby="coverHelpBlock">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="usuario" class="form-label">Nombre de usuario</label>
+            <input type="text" id="usuario" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="text" id="password" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="password_verification" class="form-label">Reingresar Contraseña</label>
+            <input type="text" id="password_verification" class="form-control" aria-describedby="coverHelpBlock">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <button class="btn btn-success" type="submit">Enviar</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
