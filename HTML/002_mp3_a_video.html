@@ -4,85 +4,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mp3 a vídeo</title>
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
-    <style>
-        h1 {
-            padding: 2em 0;
-        }
-        h2 {
-            color: #8a8a8a;
-            font-size: 1.2em;
-        }
-        .mt4em {
-            margin-top: 4em;
-        }
-        button#submit {
-            width: 10em;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="../IMAGENES/youtube.png" alt="Bootstrap" height="24" style="position: relative; top: -0.1em;">
-                Pódcast a YouTube
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a class="nav-link" href="">PDF a DOC (OCR)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Búsqueda completa de texto para DOCs</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+<nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
-        <nav aria-label="breadcrumb" class="mt-3">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">mp3 a vídeo</li>
-            </ol>
-        </nav>
-        <div class="text-center">
-            <p class="fs-1">mp3 a vídeo</p>
-            <p class="fw-light">Obtén un archivo de video a partir de un mp3 en solo dos pasos.</p>
+        <a class="navbar-brand" href="index.html">
+            <img src="../IMAGENES/youtube.png" alt="Bootstrap" height="24" style="position: relative; top: -0.1em;">
+            Pódcast a YouTube
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otras Herramientas Disponibles
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Organización de Documentos Personales</a></li>
+                        <li><a class="dropdown-item" href="#">PDF a DOC (OCR)</a></li>
+                        <li><a class="dropdown-item" href="#">Búsqueda completa de texto para DOCs</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <form class="mt4em">
-            <div class="row">
-                <div class="col-md-4">
-                    <label for="mp3" class="form-label">selecciona el archivo mp3</label>
-                    <input type="file" id="mp3" class="form-control">
-                </div>
-                <div class="col-md-4">
-                    <label for="cover" class="form-label">selecciona una imagen</label>
-                    <input type="file" id="cover" class="form-control" aria-describedby="coverHelpBlock">
-                    <div id="coverHelpBlock" class="form-text">
-                        para la portada del vídeo
-                    </div>
-                </div>
-                <div class="col-md-4 text-md-center">
-                    <label for="submit" class="form-label">&nbsp;</label>
-                    <br>
-                    <button id="submit" class="btn btn-success" type="submit">Subir</button>
+    </div>
+</nav>
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Página principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">mp3 a vídeo</li>
+        </ol>
+    </nav>
+    <div class="text-center">
+        <p class="fs-1">mp3 a vídeo</p>
+        <p class="fw-light">Obtén un archivo de video a partir de un mp3 en solo dos pasos.</p>
+    </div>
+    <form class="mt4em">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="mp3" class="form-label">selecciona el archivo mp3</label>
+                <input type="file" id="mp3" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="cover" class="form-label">selecciona una imagen</label>
+                <input type="file" id="cover" class="form-control" aria-describedby="coverHelpBlock">
+                <div id="coverHelpBlock" class="form-text">
+                    para la portada del vídeo
                 </div>
             </div>
-        </form>
+            <div class="col-md-4 text-md-center">
+                <label for="submit" class="form-label">&nbsp;</label>
+                <br>
+                <button id="submit" class="btn btn-success" type="submit" style="width: 10em;">Subir</button>
+            </div>
+        </div>
+    </form>
+    <div class="mt-5">
+        <p class="fs-5 text-muted">
+            ¡Transforma tu audio en video para YouTube de manera gratuita y sin esfuerzo! Aquí puedes subir fácilmente tu
+            archivo de audio y elegir una imagen para crear un video listo para ser compartido en YouTube. Sigue estos pasos
+            sencillos: selecciona tu archivo de audio y una imagen de portada, y nosotros nos encargaremos del resto. Ten en
+            cuenta que la conversión de audio a video requiere tiempo, por lo que tu solicitud se colocará en una cola de
+            procesamiento. ¿Deseas acelerar este proceso? Simplemente regístrate en nuestro sitio y disfruta de un servicio
+            más rápido. ¡Empieza ahora y lleva tus contenidos de audio a un público más amplio en YouTube!
+        </p>
     </div>
+</div>
 
-    <footer class="footer mt-auto bg-light">
-        <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="005_form_de_contacto.html" class="nav-link px-2 text-muted">Contactanos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cómo cuidamos tu privacidad</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accesibilidad</a></li>
-        </ul>
-        <p class="text-center text-muted">© 2023 NibbanaSoft S.R.L.</p>
-    </footer>
+<footer class="footer mt-auto bg-light">
+    <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="005_form_de_contacto.html" class="nav-link px-2 text-muted">Contactanos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cómo cuidamos tu privacidad</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accesibilidad</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2023 NibbanaSoft S.R.L.</p>
+</footer>
 
-    <script src="../JS/bootstrap.bundle.min.js"></script>
+<script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,62 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
-    <style>
-        h1 {
-            padding: 2em 0;
-        }
-        #youtube-icon {
-            width: 1.5em;
-        }
-
-        .card > h2 {
-            padding-top: 1em;
-        }
-        .card > h3 {
-            font-size: 1em;
-            color: #007db0;
-        }
-        .card > a {
-            margin-top: 1.5em;
-        }
-
-        #mp3-to-video {
-            background: rgb(237,236,255);
-            background: linear-gradient(90deg, rgba(237,236,255,1) 19%, rgba(220,220,255,1) 33%, rgba(186,217,255,0.9360119047619048) 72%, rgba(165,240,255,1) 93%);
-            padding: 1em;
-        }
-
-        #badge-free {
-            background-image: linear-gradient(#a4eaff, #b700ff);
-            position: absolute;
-            padding: 1em;
-            margin-top: -1.8em;
-            border-radius: 50px;
-            color: #fff;
-        }
-
-        #mp3-to-youtube {
-            background: url("../IMAGENES/crown.png"), linear-gradient(90deg, rgba(237,236,255,1) 19%, rgba(254,255,220,1) 33%, rgba(253,255,186,0.9360119047619048) 72%, rgba(205,255,165,1) 93%);
-            padding: 1em;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            background-position: center;
-        }
-
-        #badge-premium {
-            color: #fffcf8;
-            background-image: linear-gradient(#ffdfa4, #b700ff);
-            position: absolute;
-            padding: 1em;
-            margin-top: -1.8em;
-            border-radius: 50px;
-        }
-
-        #footer {
-            margin-top: 2em;
-        }
-    </style>
+    <title>Pódcast a YouTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-light">
@@ -72,8 +19,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a class="nav-link" href="">PDF a DOC (OCR)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Búsqueda completa de texto para DOCs</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otras Herramientas Disponibles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Organización de Documentos Personales</a></li>
+                            <li><a class="dropdown-item" href="#">PDF a DOC (OCR)</a></li>
+                            <li><a class="dropdown-item" href="#">Búsqueda completa de texto para DOCs</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -105,6 +60,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="row mt-5">
+                <p class="fs-5 text-muted">
+                    Nuestro sitio web ofrece una solución innovadora y fácil de usar para transformar tus archivos de audio en
+                    videos y subirlos directamente a YouTube. ¿Tienes un podcast o una grabación de audio que quieres compartir
+                    con el mundo? Nuestro servicio convierte automáticamente tu audio en un video compatible con YouTube,
+                    manteniendo la calidad y duración original. Simplemente carga tu archivo de audio y nosotros nos encargamos
+                    del resto, facilitando que tu contenido llegue a una audiencia más amplia sin complicaciones técnicas. ¡Es
+                    la manera perfecta de amplificar tu voz y compartir tus ideas en la plataforma de video más grande del
+                    mundo!
+                </p>
             </div>
         </div>
     </div>

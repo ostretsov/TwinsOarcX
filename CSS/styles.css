@@ -1,0 +1,73 @@
+h1 {
+    padding: 2em 0;
+}
+
+h2 {
+    color: #8a8a8a;
+    font-size: 1.2em;
+}
+
+.mt4em {
+    margin-top: 4em;
+}
+
+/* Página principal */
+#youtube-icon {
+    width: 1.5em;
+}
+
+.card > h2 {
+    padding-top: 1em;
+}
+.card > h3 {
+    font-size: 1em;
+    color: #007db0;
+}
+.card > a {
+    margin-top: 1.5em;
+}
+
+#mp3-to-video {
+    background: rgb(237,236,255);
+    background: linear-gradient(90deg, rgba(237,236,255,1) 19%, rgba(220,220,255,1) 33%, rgba(186,217,255,0.9360119047619048) 72%, rgba(165,240,255,1) 93%);
+    padding: 1em;
+}
+
+#badge-free {
+    background-image: linear-gradient(#a4eaff, #b700ff);
+    position: absolute;
+    padding: 1em;
+    margin-top: -1.8em;
+    border-radius: 50px;
+    color: #fff;
+}
+
+#mp3-to-youtube {
+    background: url("../IMAGENES/crown.png"), linear-gradient(90deg, rgba(237,236,255,1) 19%, rgba(254,255,220,1) 33%, rgba(253,255,186,0.9360119047619048) 72%, rgba(205,255,165,1) 93%);
+    padding: 1em;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-position: center;
+}
+
+#badge-premium {
+    color: #fffcf8;
+    background-image: linear-gradient(#ffdfa4, #b700ff);
+    position: absolute;
+    padding: 1em;
+    margin-top: -1.8em;
+    border-radius: 50px;
+}
+
+/* mp3 a YouTube */
+#new-channel {
+    background: #e0e0e0;
+}
+
+#plus-link {
+    text-decoration: none;
+}
+
+#plus-sign {
+    font-size: 5em;
+    color: #fff;
+}

@@ -4,25 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
-    <style>
-        h1 {
-            padding: 2em 0;
-        }
-
-        h2 {
-            color: #8a8a8a;
-            font-size: 1.2em;
-        }
-
-        .mt4em {
-            margin-top: 4em;
-        }
-
-        button#submit {
-            width: 10em;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-lg bg-light">
@@ -37,8 +20,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item"><a class="nav-link" href="">PDF a DOC (OCR)</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Búsqueda completa de texto para DOCs</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otras Herramientas Disponibles
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Organización de Documentos Personales</a></li>
+                        <li><a class="dropdown-item" href="#">PDF a DOC (OCR)</a></li>
+                        <li><a class="dropdown-item" href="#">Búsqueda completa de texto para DOCs</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -46,7 +37,7 @@
 <div class="container">
     <nav aria-label="breadcrumb" class="mt-3">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Página principal</a></li>
             <li class="breadcrumb-item active" aria-current="page">Formulario de Contacto</li>
         </ol>
     </nav>
